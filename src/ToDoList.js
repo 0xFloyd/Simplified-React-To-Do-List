@@ -12,7 +12,7 @@ class ToDoList extends React.Component {
         };
 
         this.addTask = this.addTask.bind(this);
-        this.deleteItem = this.deleteItem.bind(this);
+        this.deleteTask = this.deleteTask.bind(this);
     }
   
     addTask(e) {
@@ -26,8 +26,9 @@ class ToDoList extends React.Component {
                 return {
                     tasks: prevState.tasks.concat(newTask)
                 };
+            
         });
-
+            localStorage.setItem("tasks", this.state.tasks);    //left off here on local storage 
             this.textInput.value = '';
         }
 
