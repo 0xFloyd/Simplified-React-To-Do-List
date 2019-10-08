@@ -1,7 +1,7 @@
 import React from "react";
 import ToDoItems from "./ToDoItems";
 import "./index.css";
-import { Row, Col, Input, Form } from "reactstrap";
+import { Tooltip } from "reactstrap";
 
 
 class ToDoList extends React.Component {
@@ -10,10 +10,12 @@ class ToDoList extends React.Component {
         
         this.state = {
             tasks: [],
+          tooltipOpen: false
         };
 
         this.addTask = this.addTask.bind(this);
         this.deleteTask = this.deleteTask.bind(this);
+        this.toggle = this.toggle.bind(this);
     }
     
     formatDate = (date) => {
@@ -59,14 +61,31 @@ class ToDoList extends React.Component {
         });
     }
   
+    toggle() {
+      this.setState({
+        tooltipOpen: !this.state.tooltipOpen
+      });
+    }
     
   
     render() {
         return (
           <div className="todoListMain">
             <div className="header">
+              <div>
+                <h2>TewDew<span className="toolTipMark" href="#" id="toolTip">?</span></h2>
+                <Tooltip  isOpen={this.state.tooltipOpen} target="toolTip" toggle={this.toggle}>
+                  <div>
+                    <p className="toolTipText">TewDew is the simplest To Do App possible, so you can focus on only one thing. Add at task with the "Add Task" button, and delete a task by simply clicking on it.</p>
+                  </div>
+                </Tooltip>
+              </div>
+              <div>
+                <p>Your tasks, focused and simplifed.</p>
+              </div>
               <form onSubmit={this.addTask}>
                     <input
+                      className="taskTextInput"
                       ref={x => (this.textInput = x)}
                       placeholder="Enter task"
                 ></input>

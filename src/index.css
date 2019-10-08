@@ -1,7 +1,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     color:rgb(88, 88, 88);
-}
+    max-width: 100%;}
 
 .container {
     margin: 0 auto;
@@ -80,4 +80,33 @@ ul.taskList {
 
 .dateInput {
   display: inline-block;
+  padding: 7px !important;
+  color:rgb(122, 122, 122);
+}
+
+.taskTextInput {
+  margin-right: 10px;
+}
+
+#toolTip {
+  float: right;
+  background-color: #61dbfb;
+  padding: 5px 10px 5px 10px;
+  border-radius: 50px;
+  color:white;
+}
+
+.toolTipText {
+  color: black(122, 122, 122);
+  background-color: rgba(184, 184, 184, 0.219);
+
+  
+}
+
+h1 {
+    display: inline-block;
+}
+
+.toolTipMark {
+  font-size: 14px;
 }
