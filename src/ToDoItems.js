@@ -13,7 +13,7 @@ class ToDoItems extends React.Component {
     }
 
     createTasks(task) {
-        return <li onClick={() => this.delete(task.key)} key={task.key}>{task.name}</li>
+        return <li onClick={() => this.delete(task.key)} key={task.key}>{task.name}<div className="taskDate">{task.date}</div></li>
     }
 
     render() {
