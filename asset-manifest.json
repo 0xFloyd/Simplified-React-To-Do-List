@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Simplified-React-To-Do-List/static/css/main.498cf7df.chunk.css",
+    "main.css": "/Simplified-React-To-Do-List/static/css/main.f426d69c.chunk.css",
     "main.js": "/Simplified-React-To-Do-List/static/js/main.e4c12932.chunk.js",
     "main.js.map": "/Simplified-React-To-Do-List/static/js/main.e4c12932.chunk.js.map",
     "runtime-main.js": "/Simplified-React-To-Do-List/static/js/runtime-main.a22c30dd.js",
@@ -8,14 +8,14 @@
     "static/js/2.71c02b92.chunk.js": "/Simplified-React-To-Do-List/static/js/2.71c02b92.chunk.js",
     "static/js/2.71c02b92.chunk.js.map": "/Simplified-React-To-Do-List/static/js/2.71c02b92.chunk.js.map",
     "index.html": "/Simplified-React-To-Do-List/index.html",
-    "precache-manifest.72f66d888facd20f2f0e1ea96faec3f5.js": "/Simplified-React-To-Do-List/precache-manifest.72f66d888facd20f2f0e1ea96faec3f5.js",
+    "precache-manifest.8eb366027a322cc3f0b80e793e50d2e0.js": "/Simplified-React-To-Do-List/precache-manifest.8eb366027a322cc3f0b80e793e50d2e0.js",
     "service-worker.js": "/Simplified-React-To-Do-List/service-worker.js",
-    "static/css/main.498cf7df.chunk.css.map": "/Simplified-React-To-Do-List/static/css/main.498cf7df.chunk.css.map"
+    "static/css/main.f426d69c.chunk.css.map": "/Simplified-React-To-Do-List/static/css/main.f426d69c.chunk.css.map"
   },
   "entrypoints": [
     "static/js/runtime-main.a22c30dd.js",
     "static/js/2.71c02b92.chunk.js",
-    "static/css/main.498cf7df.chunk.css",
+    "static/css/main.f426d69c.chunk.css",
     "static/js/main.e4c12932.chunk.js"
   ]
 }
