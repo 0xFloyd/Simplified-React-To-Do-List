@@ -18,8 +18,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://github.com/MrRyanFloyd/Simplified-React-To-Do-List",
-
+  "homepage": "https://MrRyanFloyd.github.io/Simplified-React-To-Do-List/index.html",
   "eslintConfig": {
     "extends": "react-app"
   },
