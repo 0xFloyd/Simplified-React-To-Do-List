@@ -23,6 +23,8 @@ body {
   width: 165px;
   border-radius: 4px;
   font-family: 'Roboto', sans-serif;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 
 .todoListMain .header input:focus {
@@ -89,6 +91,7 @@ ul.taskList {
 
 .dateInput {
   display: inline-block;
+   -webkit-appearance: none;
  
   color:rgb(122, 122, 122);
 }

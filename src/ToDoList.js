@@ -43,7 +43,7 @@ class ToDoList extends React.Component {
         });
            
           this.textInput.value = '';
-          this.dateInput.value = '';
+          this.dateInput.value = 'mm/dd/yyyy';
         }
 
         console.log(this.state.tasks);
@@ -76,7 +76,7 @@ class ToDoList extends React.Component {
                 <h1>TewDew<span className="toolTipMark" href="#" id="toolTip">?</span></h1>
                 <Tooltip  isOpen={this.state.tooltipOpen} target="toolTip" toggle={this.toggle}>
                   <div>
-                    <p className="toolTipText">TewDew is the simplest To Do App possible, so you can focus on only one thing. <br></br>Add at task with the "Add Task" button, and delete a task by simply clicking on it.</p>
+                    <p className="toolTipText">TewDew focuses on your tasks, and nothing else.<br></br>Add at task with the "Add Task" button, and delete a task by simply clicking on it.</p>
                   </div>
                 </Tooltip>
               </div>
@@ -92,6 +92,9 @@ class ToDoList extends React.Component {
                 <input
                       type="date"
                       className="dateInput"
+                      placeholder="mm-dd-yyyy"
+                      onfocus={this.type="date"}
+                      onblur={this.type = "text"}
                       ref={x => {
                         this.dateInput = x;
                       }}
