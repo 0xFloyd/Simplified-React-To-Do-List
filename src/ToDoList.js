@@ -73,15 +73,15 @@ class ToDoList extends React.Component {
           <div className="todoListMain">
             <div className="header">
               <div>
-                <h2>TewDew<span className="toolTipMark" href="#" id="toolTip">?</span></h2>
+                <h1>TewDew<span className="toolTipMark" href="#" id="toolTip">?</span></h1>
                 <Tooltip  isOpen={this.state.tooltipOpen} target="toolTip" toggle={this.toggle}>
                   <div>
-                    <p className="toolTipText">TewDew is the simplest To Do App possible, so you can focus on only one thing. Add at task with the "Add Task" button, and delete a task by simply clicking on it.</p>
+                    <p className="toolTipText">TewDew is the simplest To Do App possible, so you can focus on only one thing. <br></br>Add at task with the "Add Task" button, and delete a task by simply clicking on it.</p>
                   </div>
                 </Tooltip>
               </div>
               <div>
-                <p>Your tasks, focused and simplifed.</p>
+                <p className="siteDescription">Your tasks, focused and simplifed.</p>
               </div>
               <form onSubmit={this.addTask}>
                     <input
